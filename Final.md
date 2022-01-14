@@ -9,37 +9,41 @@
 
 首先將要測試的資料存成txt，並嘗試讀出
 
-![image](https://user-images.githubusercontent.com/62200440/149453851-c365c9a3-203c-4d82-bbc3-49ee8399029f.png)
+![image](https://user-images.githubusercontent.com/62200440/149455527-9d9b5806-c849-4271-ace4-6ecbe880f95e.png)
 
 
 
 ```
 
 for line in open('C:\\Users\\Lin\\Desktop\\textcase.txt'):
-    print(line)
+    print("檔案裡的資料 : ",line)
 f.close()
 
 ```
 
-![image](https://user-images.githubusercontent.com/62200440/149453909-725a8cb8-5a66-495c-83f1-4cf0be6feaca.png)
+![image](https://user-images.githubusercontent.com/62200440/149455491-888c6c54-d698-4349-a428-c5f72559d041.png)
 
 
 
 接著嘗試讀出每個字的ASCII碼
 
 ```
-theKey=int()
+theKey=3
 strr=[]
-with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:    
+with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:
+    
     for line in f.readline().split():
+        
         if(line.isalpha):
             strr=line
             print(strr)
-            for getNum in strr:  # 遍歷所讀檔案內容
-                num = ord(getNum)  # 拿到每個字母的ASCII碼
+            for getNum in strr:  # 遍歷密（明）文資訊
+                num = ord(getNum)  # 獲取字母的ASCII碼，
                 num2 = num
-                print("原本的asicc為: " + f'{num}')
-
+                num2 += theKey  # 通過金鑰對密文進行移位操作從而獲得真實的明文字母
+                print("原本的asicc為: " + f'{num}')   
+                print("經過位移的數字為: ",f'{num2}', " 轉換後為" + chr(num2))
+                #mystring = str(num2)
            
         else:
             theKey = line
@@ -51,7 +55,8 @@ with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:
    即可得到
    
      
-![image](https://user-images.githubusercontent.com/62200440/149453746-cfb4da56-013f-47cc-9000-370e234d169b.png)
+![image](https://user-images.githubusercontent.com/62200440/149455346-bcecd7a2-3e46-42c2-92bf-26479d850fad.png)
+
 
       
    
