@@ -28,8 +28,6 @@ f.close()
 接著嘗試讀出每個字的ASCII碼
 
 ```
-theKey=3
-strr=[]
 with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:
     
     for line in f.readline().split():
@@ -68,7 +66,7 @@ with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:
                 num = ord(getNum)  # 拿到每個字母的ASCII碼，
                 num2 = num
                 num2 += theKey  # 針對位移量進行移動
-                print("原本的asicc為: " + f'{num}')   
+                print(getNum,"原本的asicc為: " + f'{num}')                 
                 print("經過位移的數字為: ",f'{num2}', " 轉換後為" + chr(num2))
                 #mystring = str(num2)
            
