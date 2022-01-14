@@ -2,6 +2,10 @@
 
 首先將要測試的資料存成txt，並嘗試讀出
 
+![image](https://user-images.githubusercontent.com/62200440/149453851-c365c9a3-203c-4d82-bbc3-49ee8399029f.png)
+
+
+
 ```
 
 for line in open('C:\\Users\\Lin\\Desktop\\textcase.txt'):
@@ -10,7 +14,11 @@ f.close()
 
 ```
 
-接著將
+![image](https://user-images.githubusercontent.com/62200440/149453909-725a8cb8-5a66-495c-83f1-4cf0be6feaca.png)
+
+
+
+接著嘗試讀出每個字的ASCII碼
 
 ```
 theKey=int()
