@@ -37,10 +37,37 @@ with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:
         if(line.isalpha):
             strr=line
             print(strr)
-            for getNum in strr:  # 遍歷密（明）文資訊
-                num = ord(getNum)  # 獲取字母的ASCII碼，
+            for getNum in strr:  # 遍歷檔案的內容
+                num = ord(getNum)  # 拿到每個字母的ASCII碼，
+                print(getNum,"原本的asicc為: " + f'{num}')              
+        else:
+            theKey = line
+f.close()       
+        
+   ```
+   
+   ![image](https://user-images.githubusercontent.com/62200440/149455721-e1672ff7-f61c-45d7-8f69-aea26d84d65a.png)
+
+   
+   
+   
+   
+   進行位移
+   
+   ```
+theKey=3
+strr=[]
+with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:
+    
+    for line in f.readline().split():
+        
+        if(line.isalpha):
+            strr=line
+            print(strr)
+            for getNum in strr:  # 遍歷檔案的內容
+                num = ord(getNum)  # 拿到每個字母的ASCII碼，
                 num2 = num
-                num2 += theKey  # 通過金鑰對密文進行移位操作從而獲得真實的明文字母
+                num2 += theKey  # 針對位移量進行移動
                 print("原本的asicc為: " + f'{num}')   
                 print("經過位移的數字為: ",f'{num2}', " 轉換後為" + chr(num2))
                 #mystring = str(num2)
@@ -48,8 +75,9 @@ with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:
         else:
             theKey = line
             #print(theKey)
-        
+    f.close()      
    ```
+   
    
    
    即可得到
