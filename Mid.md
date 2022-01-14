@@ -29,3 +29,20 @@ print("")
 
 　
 ![image](https://user-images.githubusercontent.com/62200440/149460048-8715ef2e-49b9-4248-859b-2fe3d9dc28a5.png)
+
+
+將位移後結果轉換
+
+```
+print("經過位移的數字為: " , f'{num2}' , " 轉換後為" + chr(num2))
+```
+會出現其他非英文字母的符號
+
+![image](https://user-images.githubusercontent.com/62200440/149460216-1590a624-5a34-4811-9f8a-01613b5c1fda.png)
+
+
+對照[ASCII轉換的圖](https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg)可知，加上位移量轉換後會超出英文字母範圍
+
+![image](https://user-images.githubusercontent.com/62200440/149460431-e67cf273-32ad-4f4e-b180-84cab3ce568c.png)
+
+
