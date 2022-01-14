@@ -1,5 +1,12 @@
 ### 加密，並以檔案測試
 
+ 本專案非原創，參考自[這裡](https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-613b2fdf38bf)，並以自身理解再次撰寫
+
+
+
+
+
+
 首先將要測試的資料存成txt，並嘗試讀出
 
 ![image](https://user-images.githubusercontent.com/62200440/149453851-c365c9a3-203c-4d82-bbc3-49ee8399029f.png)
