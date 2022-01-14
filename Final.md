@@ -81,7 +81,7 @@ with open('C:\\Users\\Lin\\Desktop\\textcase.txt') as f:
    即可得到
    
      
-![image](https://user-images.githubusercontent.com/62200440/149455346-bcecd7a2-3e46-42c2-92bf-26479d850fad.png)
+![image](https://user-images.githubusercontent.com/62200440/149456005-096d0d5e-e50c-4dbb-bd96-905ccf1ad016.png)
 
 
       
