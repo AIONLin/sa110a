@@ -99,3 +99,10 @@ theKey = -theKey       (將剛剛的位移量推回去)
 
 ![image](https://user-images.githubusercontent.com/62200440/149461568-8e864f91-3ecb-47c6-a159-340d36addcc4.png)
 
+簡易的Caesar cipher實作已經完成
+
+``` 
+其他解密的方法還有窮舉法、頻率分析或者樣式單詞分析等等
+``` 
+
+[參考資料](https://zh.wikipedia.org/wiki/%E5%87%B1%E6%92%92%E5%AF%86%E7%A2%BC)
