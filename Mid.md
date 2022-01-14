@@ -25,3 +25,7 @@ print("接收到的input是 : ", strr )
 print("")
 ```
 
+結果：　
+
+　
+![image](https://user-images.githubusercontent.com/62200440/149460048-8715ef2e-49b9-4248-859b-2fe3d9dc28a5.png)
